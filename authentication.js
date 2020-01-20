@@ -1,10 +1,24 @@
+const getConnectionLabel = (z, bundle) => {
+  const options = {
+    url: 'https://app.detrack.com/api/v2/profile',
+    method: 'GET',
+  };
+
+  return z.request(options).then((response) => {
+    response.throwForStatus();
+    const results = z.JSON.parse(response.content);
+
+    // You can do any parsing you need for results here before returning them
+
+    return results.data.name + ' @ ' + results.data.current_organization.name;
+  });
+};
+
 const authentication = {
   type: 'custom',
   test: {
     url: 'https://app.detrack.com/api/v2/profile',
     method: 'GET',
-    body: {},
-    removeMissingValuesFrom: {},
   },
   fields: [
     {
@@ -16,7 +30,7 @@ const authentication = {
       type: 'string',
     },
   ],
-  connectionLabel: 'Profile',
+  connectionLabel: getConnectionLabel,
   customConfig: {},
 };
 
