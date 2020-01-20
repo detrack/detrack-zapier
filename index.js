@@ -9,7 +9,7 @@ const App = {
   authentication: authentication.authentication,
   beforeRequest: [authentication.beforeRequest],
   triggers: {
-    [podTrigger.key]: podTrigger,
+    // [podTrigger.key]: podTrigger,
   },
   resources: {
     [JobResource.key]: JobResource,
