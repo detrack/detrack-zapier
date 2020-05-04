@@ -4,13 +4,11 @@ This readme contains development documentation. You should read the [Zapier docu
 
 ## Setting up
 
-Install the Zapier Platform CLI:
-
-`npm install -g zapier-platform-cli`
-
 Clone the repository, then install dependencies:
 
 `npm ci`
+
+Hint: use `npx zapier` instead of the `zapier` installed globally to match the versions of `zapier-platform-cli` and `zapier-platform-core`.
 
 ## Relevant files
 
