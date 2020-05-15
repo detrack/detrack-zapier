@@ -35,6 +35,11 @@ const fields = [
     'helpText': 'Job time.',
   },
   {
+    'key': 'service_time',
+    'type': 'string',
+    'helpText': 'Service time.',
+  },
+  {
     'key': 'time_window',
     'type': 'string',
     'helpText': 'Time window.',
