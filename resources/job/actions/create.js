@@ -99,6 +99,11 @@ module.exports = {
             required: true,
           },
           {
+            key: "comments",
+            helpText: "Comments",
+            type: "string"
+          },
+          {
             key: "serial_numbers",
             helpText: "Serial Numbers",
             list: true,
