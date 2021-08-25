@@ -236,7 +236,7 @@ const fields = [
   },
   {
     'key': 'weight',
-    'type': 'integer',
+    'type': 'float',
     'helpText': 'Weight.',
   },
   {
